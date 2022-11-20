@@ -44,7 +44,7 @@ const handlePageClick = e => {
 
 const fetchCall = (searchField='war',page =1)=>{
   setLoading(true);
-     axios.get(`http://www.omdbapi.com/?s=${encodeURIComponent(searchField)}&page=${page}&apikey=ff9fabc`)
+     axios.get(`https://www.omdbapi.com/?s=${encodeURIComponent(searchField)}&page=${page}&apikey=ff9fabc`)
     .then(response => {
 
       if(response.data.Search) {
