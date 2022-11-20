@@ -1,0 +1,28 @@
+
+.pagination-container {
+    position: relative;
+        bottom: 10px;
+
+}
+
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-size: 1.3rem;
+
+}
+
+.pagination li {
+    list-style: none;
+    padding: 15px;
+
+
+}
+
+ a {
+    text-decoration: none;
+    color: black;
+}

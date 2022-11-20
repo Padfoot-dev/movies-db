@@ -1,0 +1,33 @@
+{movies.length>0 ?
+
+      (<>
+      {movies.map((i)=>{
+        return (
+
+          <div>
+            <ul>
+              <li>
+{i["Title"]}
+              </li>
+            </ul>
+            </div>
+        )
+      })
+      }
+      </>):
+
+      (<>No results found</>)
+        
+      }
+
+
+<div style={{display:"flex",gap:"1em"}}>
+  
+  <span><a onClick={()=>pagination(1)}>1</a></span>
+  <span><a onClick={()=>pagination(2)}>2</a></span>
+  <span><a onClick={()=>pagination(3)}>3</a></span>
+  <span><a onClick={()=>pagination(4)}>4</a></span>
+  <span><a onClick={()=>pagination(5)}>5</a></span>
+  <span><a onClick={()=>pagination(6)}>6</a></span>
+
+  </div>
