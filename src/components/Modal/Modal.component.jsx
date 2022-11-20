@@ -26,11 +26,11 @@ const Modal = (props) => {
             <li className="show-year">{props.Rated}</li>
             <li className="show-year">{props.Genre}</li>
           </ul>
-          <div class="show-plot">
+          <div className="show-plot">
             <p>{props.Plot}</p>
           </div>
           
-          <div class="show-credits">
+          <div className="show-credits">
             <p><strong>Production:</strong> {props.Production}</p>
             <p><strong>Runtime:</strong> {props.Runtime || 'N/A '}</p>
             <p><strong>Rating:</strong> {props.imdbRating}</p>

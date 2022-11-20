@@ -5,7 +5,7 @@ import {useState, useEffect} from "react";
 import './App.css';
 import ReactPaginate from 'react-paginate';
 import axios from 'axios';
-import Pagination from './components/pagination/Pagination.component';
+import "./components/pagination/pagination.style.css"
 import Loader from './components/Loader/Loader.component';
 import Modal from './components/Modal/Modal.component';
 
@@ -94,7 +94,7 @@ const fetchCall = (searchField='war',page =1)=>{
         (movies.length === 0 ? 
          <div className='error'>
            No movie found...
-           <i class="far fa-grin-beam-sweat"></i>
+           <i className="far fa-grin-beam-sweat"></i>
          </div> : <CardList movies={movies} handleModal={handleModal} />) }
 
 
@@ -104,7 +104,7 @@ const fetchCall = (searchField='war',page =1)=>{
           nextLabel={"Next"}
           breakLabel={"..."}
           breakClassName={"break-me"}
-          pageCount={total}
+          pageCount={Math.ceil(total)}
           marginPagesDisplayed={1}
           pageRangeDisplayed={4}
           onPageChange={handlePageClick}
